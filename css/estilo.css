@@ -1,0 +1,345 @@
+/*Botão de retorno ao topo*/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffd82f;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo da barra de rolagem */
+/* Para navegadores baseados em WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffd82f; /* Cor do indicador da barra de rolagem */
+    border-radius: 6px; /* Raio da borda do indicador da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #997d00; /* Cor do indicador da barra de rolagem ao passar o mouse */
+}
+
+/*Layout*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body{
+    height: 100%;
+    background: #000;
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+}
+
+#home-direito {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-VariableFont_wght.ttf') format('truetype'); /* Substitua o formato e o caminho pelo arquivo de sua fonte */
+    /* Adicione outras variações da sua fonte, se aplicável (bold, italic, etc.) */
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Barra de navegação*/
+.bg-custom {
+    background-color: #000;
+}
+
+.navbar-dark .navbar-brand {
+    color: #ffd82f;
+    text-transform: uppercase;
+    font-family: 'Cinzel';
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffd82f;
+    text-transform: uppercase;
+    font-family: 'Cinzel';
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}   
+
+/*Estrutura de conteúdos*/
+#home {
+    margin-top: 20px;
+    border-bottom: 1px solid #ffd82f;
+}
+
+#home-direito {
+    margin-top: 20px;
+    border-bottom: 1px solid #ffd82f;
+}
+
+#sobre, #profissional, #contato, #atuacao, #acesso, #direito-civil {
+    margin-top: 35px;
+    border-bottom: 1px solid #ffd82f;
+    padding-bottom: 35px;
+}
+
+.text-dourado {
+    color: #ffd82f;
+}
+
+.btn-custom {
+    color: black;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    background: #ffd82f;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-custom:hover {
+    background: white;
+}
+
+.border {
+    border-color: #ffd82f;
+}
+
+.img {
+    border-radius: 200px;
+    box-shadow: 5px 3px 50px #ffd82f;
+}
+
+.rodape {
+    margin-top: 50px;
+    height: 50px;
+}
+
+/*Tipologia*/
+#home h2 {
+    font-size: 1.4em;
+}
+
+#home h1 {
+    color: #fff;
+}
+
+#home-direito h1 {
+    font-family: 'Cinzel';
+    font-size: 4em;
+    color: #ffd82f;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#home-direito p {
+    color: #fff;
+}
+
+#home-direito h3 {
+    margin-top: 20px;
+}
+
+#sobre h1, #atuacao h1 {
+    text-align: center;
+}
+
+#direito-civil h3 {
+    color: #ffd82f;
+    font-family: 'Cinzel';
+    margin-top: 20px;
+}
+
+#sobre h2, #profissional h2, #contato h2, #direito-civil h2 {
+    color: #ffd82f;
+    font-family: 'Cinzel';
+}
+
+#atuacao h2 {
+    color: #ffd82f;
+    font-size: 1.3em;
+}
+
+#direito-civil p {
+    margin-top: 10px;
+    text-align: justify;
+    color: #fff;
+}
+
+#sobre p, #profissional p, #atuacao p {
+    margin-top: 25px;
+    text-align: justify;
+    color: #fff;
+}
+
+#atuacao h1 {
+    color: #fff;
+    font-family: 'Cinzel';
+}
+
+#atuacao h3 {
+    color: #ffd82f;
+    text-transform: uppercase;
+}
+
+#atuacao a {
+    text-decoration: none;
+    color: #ffd82f;
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+
+#atuacao a:hover {
+    color: #fff;
+}
+
+#acesso h6 {
+    color: #ffd82f;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+#acesso h2 {
+    color: #ffd82f;
+    font-size: 1.3em;
+    font-family: 'Cinzel';
+}
+
+#acesso .nav-link {
+    color: #ffd82f;
+}
+
+#acesso .nav-link:hover {
+    color: #fff;
+}
+
+.link {
+    font-family: 'Cinzel';
+}
+
+.rodape h6 {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.rodape a {
+    color: gray;
+    font-size: 0.8em;
+}
+
+/*Media Queries*/
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+@media (min-width: 300px) { 
+    #home img {
+        display: none;
+    }
+
+    .img-direito {
+        display: none;
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #ffd82f;
+        text-transform: uppercase;
+        font-family: 'Cinzel';
+        font-size: 0.8em;
+    }    
+
+    p {
+        font-size: 1.0em;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    #home img {
+        display: none;
+    }
+
+    .img-profissional {
+        justify-content: center;
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #ffd82f;
+        text-transform: uppercase;
+        font-family: 'Cinzel';
+        font-size: 1em;
+    }  
+
+    p {
+        font-size: 1.5em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    #home img {
+        display: block;
+        width: 500px;
+    }
+
+    .img-direito {
+        display: block;
+    }
+
+    .img-profissional {
+        justify-content: end;
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #ffd82f;
+        text-transform: uppercase;
+        font-family: 'Cinzel';
+        font-size: 1em;
+    } 
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #home img {
+        display: block;
+        width: 600px;
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #ffd82f;
+        text-transform: uppercase;
+        font-family: 'Cinzel';
+        font-size: 1.2em;
+    } 
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+    #profissional img {
+        width: 450px;
+    }
+    
+ }

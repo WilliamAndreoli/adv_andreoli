@@ -13,6 +13,12 @@
   <!--Estilo css-->
   <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="js/enviarEmail.js"></script>
+
   <title>Advocacia Andreoli</title>
 </head>
 
@@ -157,7 +163,7 @@
           <h2>Vamos resolver seu problema jurídico?</h2>
           <p>
           <div>
-            <form action="processa_envio.php" method="post">
+            <form id="formEmail">
               <input name="nome" class="form-control form-control-lg mt-4" type="text" id="nome"
                 placeholder="Digite seu nome completo">
 
@@ -169,8 +175,12 @@
               <textarea name="conteudo" class="form-control form-control-lg mt-2" type="textarea" id="projeto"
                 placeholder="Descreva um pouco sua questão..."></textarea>
 
-              <input class="btn btn-custom mt-3" type="submit" value="Envie sua mensagem">
+              <input id="btnEnvio" class="btn btn-custom mt-3" type="submit" value="Envie sua mensagem">
             </form>
+
+            <div id="respostaEnvio">
+
+            </div>
           </div>
           </p>
         </div>
@@ -247,11 +257,6 @@
   <!--Retorna ao topo JS-->
   <script src="js/retornaAoTopo.js"></script>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
